@@ -20,7 +20,7 @@ function deleteFromObjectByKey(object, key)
 
 function destructivelyDeleteFromObjectByKey(object, key)
 {
-  delete object[key];
+  delete object[key]; // [key] deletes the variable that key contains | .key deletes an actual object's key from the object (which doesn't exist because in this case, the tester uses the word prop)
   return object;
 }
 
